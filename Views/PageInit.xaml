@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.PageInit"
+             Title="Biblioteca">
+
+   
+    <VerticalStackLayout Spacing="10" Padding="10">
+        <Label Text="Nombre del autor" />
+        <Entry x:Name="nombres"
+               Placeholder="autor"
+               Keyboard="Text"/>
+
+        <Label Text="Nacionalidad del autor" />
+        <Picker x:Name="pais">
+            <Picker.Items>
+                <x:String>Honduras</x:String>
+                <x:String>Costa Rica</x:String>
+                <x:String>Guatemala</x:String>
+                <x:String>Inglaterra</x:String>
+                
+            </Picker.Items>
+        </Picker>
+
+        <Button x:Name="btnagregar" 
+                Text="Agregar" 
+                Clicked="btnagregar_Clicked" />
+
+        <Button x:Name="btnautor" 
+        Text="Autores" 
+        Clicked="btnautor_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>
+    
